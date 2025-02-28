@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya - Tema Elektronik</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+            background: #0a0a0a;
+            position: relative;
+        }
+        /* Background Grid Neon */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 0, 32, 0.8), rgba(0, 0, 0, 0.9));
+            z-index: -1;
+        }
+        .grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: 50px 50px;
+            background-image: linear-gradient(rgba(0, 255, 255, 0.3) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(0, 255, 255, 0.3) 1px, transparent 1px);
+            animation: moveGrid 6s linear infinite;
+        }
+        @keyframes moveGrid {
+            0% { background-position: 0 0, 0 0; }
+            100% { background-position: 50px 50px, 50px 50px; }
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(14px);
+            padding: 35px;
+            width: 360px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+            animation: fadeIn 1s ease-in-out;
+            z-index: 10;
+        }
+        img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 5px solid rgba(0, 255, 255, 0.7);
+            margin-bottom: 15px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+        }
+        h2 {
+            color: #00ffff;
+            font-size: 22px;
+            margin-bottom: 12px;
+            text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
+        }
+        .bio {
+            font-size: 16px;
+            color: #00ffff;
+            margin-bottom: 25px;
+            text-shadow: 0 0 6px rgba(0, 255, 255, 0.5);
+        }
+        .buttons a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+            background: linear-gradient(135deg, #00ffff, #8000ff);
+            padding: 14px;
+            margin: 10px 0;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 12px rgba(0, 255, 255, 0.5);
+        }
+        .buttons a:hover {
+            background: linear-gradient(135deg, #8000ff, #00ffff);
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(128, 0, 255, 0.8);
+        }
+        .tiktok {
+            background: #222;
+            color: #00ffff;
+            box-shadow: 0 4px 12px rgba(0, 255, 255, 0.5);
+        }
+        .tiktok:hover {
+            background: #444;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="grid"></div>
+    </div>
+    <div class="container">
+        <img src="https://img12.pixhost.to/images/588/571626283_aanzcuyxzzz.jpg" alt="Foto Profil">
+        <h2>DULZZ4YOU</h2>
+        <p class="bio">OPEN JUAL AKUN FF/ML DAN LAINNYA!</p>
+        <div class="buttons">
+            <a href="https://wa.me/6283169294794" class="tiktok" target="_blank">WHATSAPP DULZZ4YOU</a>
+            <a href="https://whatsapp.com/channel/0029Vb8YQ2wHLHQcVYx7nR16" target="_blank">ALL STOK DULZZ4YOU</a>
+            <a href="https://whatsapp.com/channel/0029VaplkUC1t90VpPu7aq28" target="_blank">ALL TESTI DULZZ4YOU</a>
+            <a href="https://badzxd.github.io/DULZZ4YOU-/" target="_blank">ALL PRODUK DULZZ4YOU</a>
+        </div>
+    </div>
+</body>
+</html>
